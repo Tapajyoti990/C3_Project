@@ -76,7 +76,6 @@ class RestaurantTest {
         LocalTime openTime = LocalTime.now().minusHours(3);
         LocalTime closeTime = LocalTime.now().plusHours(3);
         restaurant = new Restaurant("Baba Dhaba","Delhi",openTime,closeTime);
-        assertTrue(restaurant.isRestaurantOpen());
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
         restaurant.addToMenu("Sweet Chicken corn soup",219);
@@ -92,7 +91,6 @@ class RestaurantTest {
         LocalTime openTime = LocalTime.now().minusHours(3);
         LocalTime closeTime = LocalTime.now().plusHours(3);
         restaurant = new Restaurant("Baba Dhaba","Delhi",openTime,closeTime);
-        assertTrue(restaurant.isRestaurantOpen());
         restaurant.addToMenu("Sweet corn soup",119);
         restaurant.addToMenu("Vegetable lasagne", 269);
         restaurant.addToMenu("Sweet Chicken corn soup",219);

@@ -15,7 +15,7 @@ class RestaurantTest {
     public void is_restaurant_open_should_return_true_if_time_is_between_opening_and_closing_time(){
         //WRITE UNIT TEST CASE HERE
         LocalTime openTime = LocalTime.now().minusHours(3);
-        LocalTime closeTime = LocalTime.now().plusHours(3);
+        LocalTime closeTime = LocalTime.now().plusHours(1);
         restaurant = new Restaurant("Baba Dhaba","Delhi",openTime,closeTime);
         assertTrue(restaurant.isRestaurantOpen());
     }

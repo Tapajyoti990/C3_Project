@@ -20,7 +20,9 @@ public class Restaurant {
     public boolean isRestaurantOpen() {
         LocalTime localTime = getCurrentTime();
         boolean open = localTime.isAfter(openingTime);
+        System.out.println(open);
         boolean close = localTime.isBefore(closingTime);
+        System.out.println(close);
         return open && close;
         //DELETE ABOVE STATEMENT AND WRITE CODE HERE
     }
